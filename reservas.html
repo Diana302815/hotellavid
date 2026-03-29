@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas · La Vid Hotel & Suites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="assets/img/logo.png" alt="La Vid Hotel & Suites"></div>
+        <nav class="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="santa-helena.html">Santa Helena</a>
+        </nav>
+        <button class="btn-reserva-header">Reservar ahora</button>
+    </header>
+
+    <section class="seccion seccion-clara">
+        <h2 class="titulo-centrado">Elige tu experiencia</h2>
+        <p class="subtitulo-centrado">Habitaciones, finca y paquetes de aventura diseñados para ti</p>
+
+        <div class="servicios-grid">
+            <!-- Habitación Simple -->
+            <div class="servicio-card" data-modal="modal-simple">
+                <div class="servicio-icono"><i class="fas fa-bed"></i></div>
+                <h3>Habitación Simple</h3>
+                <p>Amplia cama doble, baño privado y vistas al jardín. Ideal para escapadas en pareja.</p>
+            </div>
+            <!-- Habitación Múltiple -->
+            <div class="servicio-card" data-modal="modal-multiple">
+                <div class="servicio-icono"><i class="fas fa-bunk-bed"></i></div>
+                <h3>Habitación Múltiple</h3>
+                <p>Varias camas, perfecta para familias o grupos de amigos. Confort y amplitud.</p>
+            </div>
+            <!-- Suite 3er Piso -->
+            <div class="servicio-card" data-modal="modal-suite">
+                <div class="servicio-icono"><i class="fas fa-champagne-glasses"></i></div>
+                <h3>Suite Tercer Piso</h3>
+                <p>Balcón panorámico, pequeña cocina y vistas espectaculares del pueblo y la naturaleza.</p>
+            </div>
+            <!-- Finca La Vid -->
+            <div class="servicio-card" data-modal="modal-finca">
+                <div class="servicio-icono"><i class="fas fa-tree"></i></div>
+                <h3>Finca La Vid</h3>
+                <p>Espacio para eventos y retiros, capacidad hasta 100 personas. Naturaleza y lujo.</p>
+            </div>
+            <!-- Paquetes Turísticos -->
+            <div class="servicio-card" data-modal="modal-aventura">
+                <div class="servicio-icono"><i class="fas fa-mountain"></i></div>
+                <h3>Paquetes Aventura</h3>
+                <p>Senderismo, parapente, cuatrimotos y lagunas cristalinas. Vive la adrenalina.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MODALES CORREGIDOS ========== -->
+    <!-- Modal Habitación Simple -->
+    <div id="modal-simple" class="modal-servicio">
+        <div class="modal-servicio-contenido">
+            <span class="modal-servicio-cerrar">&times;</span>
+            <div class="modal-servicio-layout">
+                <div class="modal-servicio-slider">
+                    <div class="slider-container">
+                        <div class="slider-imagenes">
+                            <img src="assets/img/hab cama doble1.jpeg" alt="Simple 1">
+                            <img src="assets/img/hab cama doble2.jpeg" alt="Simple 2">
+                            <img src="assets/img/hab cama doble3.jpeg" alt="Simple 3">
+                            <img src="assets/img/hab cama doble4.jpeg" alt="Simple 4">
+                        </div>
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="modal-servicio-info">
+                    <h3>Habitación Simple</h3>
+                    <p>Disfruta de una estancia acogedora con todos los detalles pensados para tu descanso. Cama doble, baño privado, TV, WiFi y vista al jardín interior.</p>
+                    <div class="modal-botones">
+                        <button class="btn-reservar-modal" onclick="window.open('https://calendly.com/tu-enlace/habitacion-simple', '_blank')">Reservar ahora</button>
+                        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20la%20habitación%20simple" target="_blank" class="btn-whatsapp-modal">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Habitación Múltiple -->
+    <div id="modal-multiple" class="modal-servicio">
+        <div class="modal-servicio-contenido">
+            <span class="modal-servicio-cerrar">&times;</span>
+            <div class="modal-servicio-layout">
+                <div class="modal-servicio-slider">
+                    <div class="slider-container">
+                        <div class="slider-imagenes">
+                            <img src="assets/img/hab doble ocup1.jpeg" alt="Simple 1">
+                            <img src="assets/img/hab doble ocup2.jpeg" alt="Simple 2">
+                            <img src="assets/img/hab doble ocup3.jpeg" alt="Simple 3">
+                            <img src="assets/img/hab doble ocup4.jpeg" alt="Simple 4">
+                            <img src="assets/img/hab doble ocup5.jpeg" alt="Simple 5">
+                            <img src="assets/img/hab doble ocup6.jpeg" alt="Simple 6">
+                        </div>
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="modal-servicio-info">
+                    <h3>Habitación Múltiple</h3>
+                    <p>Ideal para familias o grupos. Cuenta con varias camas, baño privado, TV, WiFi y espacio adicional para compartir. Amplias y cómodas.</p>
+                    <div class="modal-botones">
+                        <button class="btn-reservar-modal" onclick="window.open('https://calendly.com/tu-enlace/habitacion-multiple', '_blank')">Reservar ahora</button>
+                        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20la%20habitación%20múltiple" target="_blank" class="btn-whatsapp-modal">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Suite Tercer Piso -->
+    <div id="modal-suite" class="modal-servicio">
+        <div class="modal-servicio-contenido">
+            <span class="modal-servicio-cerrar">&times;</span>
+            <div class="modal-servicio-layout">
+                <div class="modal-servicio-slider">
+                    <div class="slider-container">
+                        <div class="slider-imagenes">
+                            <img src="assets/img/fachadahotel1.png" alt="Suite 1">
+                            <img src="assets/img/fachadahotel1.png" alt="Suite 2">
+                            <img src="https://placehold.co/400x600?text=Suite+3" alt="Suite 3">
+                            <img src="https://placehold.co/400x600?text=Suite+4" alt="Suite 4">
+                            <img src="https://placehold.co/400x600?text=Suite+5" alt="Suite 5">
+                            <img src="https://placehold.co/400x600?text=Suite+6" alt="Suite 6">
+                        </div>
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="modal-servicio-info">
+                    <h3>Suite Tercer Piso</h3>
+                    <p>La máxima expresión de lujo. Amplio balcón con vistas panorámicas, pequeña cocina equipada, sala de estar y baño con jacuzzi. Experiencia única.</p>
+                    <div class="modal-botones">
+                        <button class="btn-reservar-modal" onclick="window.open('https://calendly.com/tu-enlace/suite', '_blank')">Reservar ahora</button>
+                        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20la%20suite" target="_blank" class="btn-whatsapp-modal">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Finca La Vid -->
+    <div id="modal-finca" class="modal-servicio">
+        <div class="modal-servicio-contenido">
+            <span class="modal-servicio-cerrar">&times;</span>
+            <div class="modal-servicio-layout">
+                <div class="modal-servicio-slider">
+                    <div class="slider-container">
+                        <div class="slider-imagenes">
+                            <img src="assets/img/piscina.png" alt="Finca 1">
+                            <img src="assets/img/start-billar.png" alt="Finca 3">
+                            <img src="assets/img/start2.jpeg" alt="Finca 4">
+                            <img src="assets/img/cocina.png" alt="Finca 5">
+                            <img src="assets/img/habcamadoble.jpg" alt="Finca 6">
+                            <img src="assets/img/habvariascamas.jpg" alt="Finca 6">
+                        </div>
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="modal-servicio-info">
+                    <h3>Finca La Vid</h3>
+                    <p>Espacio exclusivo para eventos y retiros. Capacidad hasta 100 personas, zonas verdes, salón de eventos, cocina industrial y alojamiento rural de lujo.</p>
+                    <div class="modal-botones">
+                        <button class="btn-reservar-modal" onclick="window.open('https://calendly.com/tu-enlace/finca', '_blank')">Reservar ahora</button>
+                        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20la%20finca" target="_blank" class="btn-whatsapp-modal">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Paquetes Aventura -->
+    <div id="modal-aventura" class="modal-servicio">
+        <div class="modal-servicio-contenido">
+            <span class="modal-servicio-cerrar">&times;</span>
+            <div class="modal-servicio-layout">
+                <div class="modal-servicio-slider">
+                    <div class="slider-container">
+                        <div class="slider-imagenes">
+                            <img src="assets/img/start-billar.png" alt="Aventura 1">
+                            <img src="assets/img/hab cama doble1.jpeg" alt="Aventura 2">
+                            <img src="https://placehold.co/400x600?text=Aventura+3" alt="Aventura 3">
+                            <img src="https://placehold.co/400x600?text=Aventura+4" alt="Aventura 4">
+                            <img src="https://placehold.co/400x600?text=Aventura+5" alt="Aventura 5">
+                            <img src="https://placehold.co/400x600?text=Aventura+6" alt="Aventura 6">
+                        </div>
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+                <div class="modal-servicio-info">
+                    <h3>Paquetes Aventura</h3>
+                    <p>Elige entre rutas de senderismo, parapente, cuatrimotos y visitas a lagunas cristalinas. Incluye transporte desde el hotel y guías especializados.</p>
+                    <div class="modal-botones">
+                        <button class="btn-reservar-modal" onclick="window.open('https://calendly.com/tu-enlace/aventura', '_blank')">Reservar ahora</button>
+                        <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20los%20paquetes%20de%20aventura" target="_blank" class="btn-whatsapp-modal">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="santa-helena.html">Santa Helena</a>
+                <a href="#">Agradecimientos</a>
+            </div>
+            <div class="footer-redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>© 2026 La Vid Hotel & Suites. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTONES FLOTANTES -->
+    <button class="btn-flotante btn-reserva-flotante"><i class="fas fa-calendar-check"></i></button>
+    <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20el%20hotel" target="_blank" class="btn-flotante btn-whatsapp-flotante"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.querySelectorAll('.btn-reserva-header, .btn-reserva-flotante').forEach(btn => {
+            btn.addEventListener('click', () => window.location.href = 'reservas.html');
+        });
+    </script>
+</body>
+</html>

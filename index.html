@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Vid Hotel & Suites</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER FIJO -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="La Vid Hotel & Suites">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="santa-helena.html">Santa Helena</a>
+        </nav>
+        <button class="btn-reserva-header" id="btn-reserva-header">Reservar ahora</button>
+    </header>
+
+    <!-- HERO CON IMAGEN ESTÁTICA -->
+    <section class="hero" style="background-image: url('assets/img/fachadahotel1.png'); background-attachment: fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>La Vid Hotel & Suites</h1>
+            <p>Un refugio de lujo a las puertas de la naturaleza</p>
+            <button class="btn-hero" id="hero-reserva-btn">Reserva tu estancia</button>
+        </div>
+    </section>
+
+  <!-- SECCIÓN: Hotel único -->
+<section class="seccion seccion-clara">
+    <h2 class="titulo-centrado">Un hotel único en la zona</h2>
+    <div class="grid-2">
+        <!-- Columna izquierda: imagen -->
+        <div class="imagen-redonda">
+            <img src="assets/img/barhotel.png" alt="Hotel">
+        </div>
+        <!-- Columna derecha: textos y botón -->
+        <div>
+            <p><strong>Fundado en 2026</strong>, ofrecemos una experiencia VIP incomparable, a solo minutos de la emblemática Hacienda La María y rodeado de atractivos naturales.</p>
+            <p>En La Vid Hotel & Suites hemos creado un espacio donde el lujo se encuentra con la autenticidad del campo. Nuestras instalaciones han sido diseñadas para ofrecer el máximo confort, combinando elegancia y calidez. Disfruta de nuestra piscina climatizada, bar exclusivo y servicios personalizados que hacen de tu estancia algo inolvidable.</p>
+            <p>A solo 10 minutos de la finca de retiros “La María”, puedes complementar tu experiencia con caminatas por senderos naturales, paseos en cuatrimoto, parapente y lagunas cristalinas. Somos el punto de partida ideal para explorar el Valle del Cauca.</p>
+            <a href="santa-helena.html" class="btn-hero" style="margin-top: 1rem; display: inline-block;">Descubre Santa Helena</a>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCIÓN: La Finca (referencia) -->
+    <section class="seccion seccion-oscura">
+        <div class="grid-2">
+            <div class="imagen-redonda">
+                <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Finca La Vid">
+            </div>
+            <div>
+                <h2>Espacios para eventos y retiros</h2>
+                <p>La Finca La Vid es el complemento perfecto para reuniones corporativas, bodas y experiencias grupales. Con capacidad para hasta 100 personas, cuenta con amplias zonas verdes, salón de eventos y alojamiento rural de lujo.</p>
+                <a href="reservas.html" class="btn-hero" style="margin-top: 1rem; display: inline-block;">Conoce la finca</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL DE IMÁGENES -->
+    <section class="seccion seccion-clara">
+        <h2 class="titulo-centrado">Galería de experiencias</h2>
+        <div class="carrusel-container">
+            <div class="carrusel-slides">
+                <div class="carrusel-slide"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Piscina"></div>
+                <div class="carrusel-slide"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fogata"></div>
+                <div class="carrusel-slide"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Comedor"></div>
+                <div class="carrusel-slide"><img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Vista"></div>
+            </div>
+            <button class="carrusel-btn carrusel-prev">&#10094;</button>
+            <button class="carrusel-btn carrusel-next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="santa-helena.html">Santa Helena</a>
+                <a href="#">Agradecimientos</a>
+            </div>
+            <div class="footer-redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>© 2026 La Vid Hotel & Suites. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTONES FLOTANTES (en todas las páginas) -->
+    <button class="btn-flotante btn-reserva-flotante" id="btn-reserva-flotante" title="Reservar">
+        <i class="fas fa-calendar-check"></i>
+    </button>
+    <a href="https://wa.me/573001234567?text=Hola%2C%20quiero%20información%20sobre%20el%20hotel" target="_blank" class="btn-flotante btn-whatsapp-flotante">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Botones que abren la página de reservas (puedes reemplazar por modal si quieres)
+        const btnsReserva = document.querySelectorAll('#btn-reserva-header, #hero-reserva-btn, #btn-reserva-flotante');
+        btnsReserva.forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.location.href = 'reservas.html';
+            });
+        });
+    </script>
+</body>
+</html>

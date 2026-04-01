@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             goToSlide(currentIndex + 1);
         }
 
-        let interval = setInterval(nextSlide, 5000); // cada 5 segundos
+        let interval = setInterval(nextSlide, 5000);
 
         if (prevBtn && nextBtn) {
             prevBtn.addEventListener('click', () => {
@@ -116,11 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(0);
     }
 
-    // ===== FORMULARIO DE CONTACTO (simula envío a webhook) =====
+    // ===== FORMULARIO DE CONTACTO (envío a webhook de GHL) =====
     const formContacto = document.getElementById('form-contacto');
     if (formContacto) {
         formContacto.addEventListener('submit', (e) => {
             e.preventDefault();
+            
             // Recoger datos
             const nombre = document.getElementById('nombre').value;
             const email = document.getElementById('email').value;
@@ -129,16 +130,47 @@ document.addEventListener('DOMContentLoaded', () => {
             const cumpleanos = document.getElementById('cumpleanos').value;
             const comentarios = document.getElementById('comentarios').value;
 
-            // Validación simple
+            // Validación
             if (!nombre || !email || !telefono || !nacionalidad || !cumpleanos) {
                 alert('Por favor completa todos los campos.');
                 return;
             }
 
-            // Aquí iría el fetch al webhook de GHL
-            // Por ahora simulamos éxito
-            alert('¡Mensaje enviado! Te contactaremos pronto.');
-            window.location.href = 'agradecimiento.html';
+            // Preparar datos para GHL
+            const data = {
+                nombre,
+                email,
+                telefono,
+                nacionalidad,
+                cumpleanos,
+                comentarios,
+                origen: 'web_contacto',
+                timestamp: new Date().toISOString()
+            };
+
+            // 🔁 CAMBIA ESTA URL POR LA DE TU WEBHOOK DE GHL
+            const webhookURL = 'https://services.leadconnectorhq.com/hooks/HFgqPVifwNR2SxrzGwEG/webhook-trigger/6zy2NEEBsOQ3mLAkw0tr';
+
+            // Enviar datos
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('¡Mensaje enviado! Te contactaremos pronto.');
+                    window.location.href = 'agradecimiento.html';
+                } else {
+                    alert('Hubo un error al enviar. Por favor intenta de nuevo.');
+                }
+            })
+            .catch(error => {
+                console.error('Error al enviar:', error);
+                alert('Error de conexión. Por favor verifica tu internet e intenta de nuevo.');
+            });
         });
     }
 });

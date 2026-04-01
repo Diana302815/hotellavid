@@ -96,7 +96,6 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(197, 165, 114, 0.4);
 }
-
 /* ===== HERO (IMAGEN ESTÁTICA) ===== */
 .hero {
     height: 100vh;
@@ -975,5 +974,19 @@ h1, h2, h3, h4 {
     .btn-hero {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+}
+.seccion p {
+    text-align: justify;
+}
+/* Compensación para páginas sin hero (galería, reservas, contacto, santa-helena) */
+.seccion:first-of-type {
+    padding-top: 200px; /* Ajusta según la altura de tu header */
+}
+
+/* En móvil, menos espacio */
+@media (max-width: 768px) {
+    .seccion:first-of-type {
+        padding-top: 90px;
     }
 }
